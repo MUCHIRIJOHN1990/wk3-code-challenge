@@ -78,7 +78,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 24rem;
     cursor: pointer;
 
     .poster {
@@ -90,4 +89,16 @@ h1 {
 main {
   display: flex;
   justify-content: space-around;
+  gap: 8rem;
+  flex-wrap: wrap;
+
+  .movie-menu {
+    flex-grow: 1;
+    padding: 2rem;
+
+    .movie {
+      border: 1px solid lightgray;
+      padding-right: 2rem;
+    }
+  }
 }
