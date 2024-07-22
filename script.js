@@ -50,6 +50,7 @@ function renderFirstMovie(data) {
     firstMovieCardEl.querySelector(".available-tickets");
 
   firstMovieCardPosterEl.setAttribute("src", data.poster);
+  firstMovieCardPosterEl.setAttribute("alt", data.title);
   firstMovieCardTitleEl.textContent = `Title: ${data.title}`;
   firstMovieCardRuntime.textContent = `Runtime: ${data.runtime} mins`;
   firstMovieCardShowtime.textContent = `Showtime: ${data.showtime}`;
